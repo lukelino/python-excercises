@@ -1,0 +1,4 @@
+2019-12-09 21:58:21,035 - DEBUG - Symbol musi byc pojedynczym znakiem
+2019-12-09 21:58:21,036 - DEBUG - Szerokoœæ musi mieæ wartoœæ wiêksz¹ ni¿ 2
+2019-12-09 21:58:21,036 - DEBUG - Wysokoœæ musi mieæ wartoœæ wiêksz¹ ni¿ 2
+2019-12-09 21:58:21,036 - DEBUG - Koniec programu

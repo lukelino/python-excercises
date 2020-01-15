@@ -1,0 +1,12 @@
+[ '\n'
+  'W tym czasie zaczął używać tuby harmonicznej by zaciemnić i '
+  'stłumić tembr swojej trąbki i to stłumione brzmienie trąbki miało '
+  'być później kojarzone z Davisem przez resztę jego kariery.',
+  '\n'
+  'W tym czasie zaczął używać tuby harmonicznej by zaciemnić i '
+  'stłumić tembr swojej trąbki i to stłumione brzmienie trąbki miało '
+  'być później kojarzone z Davisem przez resztę jego kariery.',
+  '\n'
+  'A w tym czasie zaczął używać tuby, by zaciemnić i stłumić tembr '
+  'swojej trąbki i to stłumione brzmienie trąbki miało być później '
+  'kojarzone z Davisem przez resztę jego kariery.']
