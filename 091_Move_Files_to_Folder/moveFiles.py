@@ -15,7 +15,8 @@ for old, new in patterns:
     data = re.sub(old, new, str(data))
 
 # Utworzenie podkatalogu
-target_dir = r'J:'
+target_dir = sys.argv[1]
+target_dir = target_dir + ':'
 target_sub_dir = os.path.join(target_dir, str(data))
 os.mkdir(target_sub_dir)
 print(f'w katalogu {target_dir} utworzono katalog {data}.')
