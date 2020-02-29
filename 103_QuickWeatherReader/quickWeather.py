@@ -11,8 +11,9 @@ import os
 import sys
 import requests
 import pprint
-import pygal
 import datetime
+
+from functions import make_a_chart
 
 if len(sys.argv) < 2:
     print('użycie: quickWeather lokalizacja')
@@ -92,7 +93,7 @@ for i in range(len(single_day_occurrence)):
     tmp4 = [single_day[i], tmp2]
     final_list.append(tmp4)
 
-current_dir = r'F:\Py\103_QuickWeatherReader'
+current_dir = r'D:\Py\103_QuickWeatherReader'
 filename = location + '.svg'
 path = os.path.join(current_dir, filename)
 print(f'File has been written as {path}')
@@ -103,16 +104,7 @@ print(final_clouds_list[1])
 # Wykres
 minimum = min(min_max) - 1  # Oś y
 maximum = max(min_max) + 1  # Oś y
-
-line_chart = pygal.Line(legend_at_bottom=True, interpolate='cubic', y_title='Temperature', x_title='Days')
-line_chart.title = f'weather forecast for {location}'
-line_chart.x_labels = map(str, hours)  # map(str, range(1, 23, 3))
-for label, data_points in final_list:
-    line_chart.add(label, data_points)
-# line_chart.add(final_clouds_list[0], final_clouds_list[1], secondary=True)       # Dodatkowa oś
-
-line_chart.range = [minimum, maximum]
-line_chart.render_to_file(path)
+make_a_chart(minimum, maximum, hours, final_list, location, path)
 
 # TODO: Dodać zachmurzenie
 # TODO: strona z wykresem powinna uruchamiać się automatycznie
