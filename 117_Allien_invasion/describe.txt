@@ -1,0 +1,18 @@
+alien_invasion.py:
+    Główny plik gry, tworzy pewną liczbę ważnych obiektów używanych w trakcie gry.
+    Ustawienia przechowywane są w ai_settings,
+    główna wyświetlana warstwa przechowywana jest w secreen,
+    egzemplarz statku przechowywany jest w ship
+
+settings.py:
+    definicja klasy Settings
+    Inicjalizacja atrybutów określających wygląd gry oraz szybkość poruszania się statku
+
+game_functions.py:
+    funkcje odpowiedzialne za wykonania znacznej ilości pracy w grze (ruch w lewo, prawo, strzelanie, itp.)
+    odświeża ekran
+
+ship.py:
+    definicja klasy Ship
+    ustawienia dotyczące położenia statku i jego wyświetlenie na ekranie (blitme)
+    obraz statku
