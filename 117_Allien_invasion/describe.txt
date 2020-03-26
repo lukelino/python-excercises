@@ -16,3 +16,6 @@ ship.py:
     definicja klasy Ship
     ustawienia dotyczące położenia statku i jego wyświetlenie na ekranie (blitme)
     obraz statku
+
+bullet.py:
+    definicja klasy Bullet

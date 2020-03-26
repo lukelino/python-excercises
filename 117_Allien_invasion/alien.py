@@ -24,3 +24,16 @@ class Alien(Sprite):
     def blitme(self):
         """ Wyświetlenie obcego w jego aktualnym położeniu """
         self.screen.blit(self.image, self.rect)
+
+    def update(self):
+        """ Przesunięcie obcego w prawo lub w lewo """
+        self.x += (self.ai_settings.alien_speed_factor * self.ai_settings.fleet_direction)
+        self.rect.x = self.x
+
+    def check_edges(self):
+        """ Zwraca wartość True jeśli obcy znajduje się przy krawędzi """
+        screen_rect = self.screen.get_rect()
+        if self.rect.right >= screen_rect.right:
+            return True
+        elif self.rect.right <= 0:
+            return True
